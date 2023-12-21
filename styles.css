@@ -1,0 +1,278 @@
+.main {
+  max-width: 1320px;
+  background-color: rgb(229, 45, 64);
+  margin: 0 auto;
+}
+.main .video {
+  margin: 10px auto;
+  width: 680px;
+  font-size: 27px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  white-space: nowrap;
+}
+.main .vide {
+  background: linear-gradient(45deg, rgb(229, 45, 64) 0%, rgb(129, 29, 135) 58%, rgb(151, 69, 168) 100%);
+  height: 444px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .vide__container {
+  display: flex;
+  flex-direction: column;
+}
+.main .vide__span {
+  background-color: rgb(229, 45, 64);
+  font-size: 14px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin: 3px 0px;
+}
+.main .vocalista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  gap: 30px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.main .vocalista .caja {
+  max-width: 300px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main .vocalista span {
+  color: red;
+  font-size: 15px;
+}
+.main .vocalista p {
+  font-size: 14px;
+}
+.main .h4__ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.699);
+  padding: 14px 10px;
+  font-size: 18px;
+}
+.main .lineup {
+  background-color: rgb(229, 45, 64);
+  max-width: 920px;
+  margin: 0 auto;
+}
+.main .lineup .h3__ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 30px 10px;
+  font-size: 18px;
+}
+.main .lineup .container__ {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+}
+.main .lineup .container__ .caja__ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(214, 214, 45);
+  margin: 20px;
+  width: 300px;
+  border-radius: 3px;
+  color: rgba(0, 0, 0, 0.644);
+  flex-direction: column;
+  box-shadow: 3px 3px 10px;
+}
+.main .lineup .container__ .caja__ .title__ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main .lineup .container__ .caja__ .title__ .p {
+  padding: 6px;
+}
+.main .lineup .container__ .caja__ .fa-guitar {
+  font-size: 35px;
+  margin: 4px;
+}
+.main .lineup .container__ .caja__ .horario-1 {
+  background-color: rgb(233, 233, 72);
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .lineup .container__ .caja__ .horario-2 {
+  background-color: rgba(218, 218, 7, 0.801);
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .lineup .container__ .caja__2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 170, 170);
+  margin: 20px;
+  width: 300px;
+  border-radius: 3px;
+  color: rgba(0, 0, 0, 0.644);
+  flex-direction: column;
+  box-shadow: 3px 3px 10px;
+}
+.main .lineup .container__ .caja__2 .horario-3 {
+  background-color: rgb(6, 126, 126);
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .lineup .container__ .caja__2 .horario-4 {
+  background-color: rgb(0, 170, 170);
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .p {
+  padding: 6px;
+}
+.main .title__ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(18, 168, 168);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  width: 760px;
+  color: white;
+}
+.nav__h1 {
+  font-size: 26px;
+  white-space: nowrap;
+}
+.nav__ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav__li {
+  padding: 10px;
+  list-style: none;
+  font-size: 18px;
+  white-space: nowrap;
+}
+.nav__a {
+  color: white;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.nav .a__:hover {
+  color: yellow;
+  transition: 0.2s;
+}
+
+.guitar {
+  font-size: 35px;
+  margin: 4px;
+}
+
+.painted {
+  background-color: white;
+}
+
+.galeria-- {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  place-items: center;
+  max-width: 760px;
+  gap: 6px;
+  background-color: white;
+  padding: 12px;
+  margin: 0 auto;
+}
+.galeria-- .img-- {
+  width: 110px;
+  height: 90px;
+  cursor: pointer;
+  box-shadow: 3px 3px 10px;
+}
+
+.tickets-container {
+  background-color: rgb(18, 168, 168);
+  padding: 12px;
+}
+.tickets-container .ticket-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  max-width: 920px;
+  margin: 0 auto;
+}
+.tickets-container .table-- {
+  border-spacing: 0;
+}
+.tickets-container .table-- .th {
+  justify-content: center;
+  display: flex;
+  padding: 6px 10px;
+  background-color: rgb(229, 45, 64);
+  width: 340px;
+  color: white;
+}
+.tickets-container .table-- .th-2 {
+  justify-content: start;
+  display: flex;
+  padding: 6px 10px;
+  background-color: white;
+  width: 340px;
+}
+.tickets-container .table-- .th-3 {
+  justify-content: center;
+  display: flex;
+  padding: 6px 10px;
+  background-color: purple;
+  width: 340px;
+  color: white;
+}
+
+.fija {
+  position: fixed;
+  box-shadow: 2px 2px 6px rgb(24, 24, 24);
+  z-index: 222;
+}/*# sourceMappingURL=styles.css.map */

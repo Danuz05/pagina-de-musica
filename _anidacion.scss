@@ -1,0 +1,167 @@
+@mixin flex($justify: center, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin h ($color: white, $pading: 20px 10px) {
+    @include flex(center, center);
+    color: $color;
+    padding: $pading;
+    font-size: 18px;
+}
+
+@mixin th ($background) {
+    background-color: $background;
+}
+
+@mixin line($background: rgb(233, 233, 72)) {
+    background-color: $background;
+    width: 100%;
+    padding: 10px;
+    @include flex(space-between, center)
+}
+
+@mixin caja ($background: rgb(214, 214, 45)) {
+    @include flex(center, center);
+    background-color: $background;
+    margin: 20px;
+    width: 300px;
+    border-radius: 3px;
+    color: rgba(0, 0, 0, 0.644);
+    flex-direction: column;
+    box-shadow: 3px 3px 10px;
+}
+
+
+
+.main {
+    max-width: 1320px;
+    background-color: rgb(229, 45, 64);
+    margin: 0 auto;
+
+    .video {
+        margin: 10px auto;
+        width: 680px;
+        font-size: 27px;
+        @include flex(space-around, center);
+        color: white;
+        white-space: nowrap;
+    }
+
+    .vide {
+        background: linear-gradient(45deg, rgba(229, 45, 64, 1) 0%, rgba(129, 29, 135, 1) 58%, rgba(151, 69, 168, 1) 100%);
+        height: 444px;
+        @include flex();
+    }
+
+    .vide__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .vide__span {
+        background-color: rgb(229, 45, 64, 1);
+        font-size: 14px;
+        padding: 4px 10px;
+        border-radius: 4px;
+        margin: 3px 0px;
+    }
+
+    .vocalista {
+        @include flex(center, center);
+        background-color: white;
+        gap: 30px;
+        margin: 0 auto;
+        padding: 20px;
+
+        .caja {
+            max-width: 300px;
+            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        span {
+            color: red;
+            font-size: 15px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .h4__ {
+        @include h(rgba(255, 255, 255, 0.699), 14px 10px);
+    }
+
+    .lineup {
+        background-color: rgba(229, 45, 64, 1);
+        max-width: 920px;
+        margin: 0 auto;
+
+        .h3__ {
+            @include h(white, 30px 10px);
+        }
+
+
+
+        .container__ {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            place-items: center;
+
+            .caja__ {
+                @include caja();
+
+                .title__ {
+                    @include flex(center, center);
+                    flex-direction: column;
+
+                    .p {
+                        padding: 6px;
+                    }
+                }
+
+                .fa-guitar {
+                    font-size: 35px;
+                    margin: 4px;
+                }
+
+                .horario-1 {
+                    @include line();
+                }
+
+                .horario-2 {
+                    @include line(rgba(218, 218, 7, 0.801));
+                }
+
+
+
+            }
+
+            .caja__2 {
+                @include caja($background: rgb(0, 170, 170));
+
+                .horario-3 {
+                    @include line(rgb(6, 126, 126));
+                }
+
+                .horario-4 {
+                    @include line(rgb(0, 170, 170))
+                }
+            }
+        }
+    }
+
+    .p {
+        padding: 6px;
+    }
+
+    .title__ {
+        @include flex(center, center);
+        flex-direction: column;
+    }
+}

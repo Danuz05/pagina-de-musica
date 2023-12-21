@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #434445;
+  transition: 0.3s;
+}
+
+.body-active {
+  transition: 0.3s;
+  background-color: rgb(116, 21, 134);
+}
+
+.main-- {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.main-- .div-- {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px auto;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+.main-- .div-- .black {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  border-radius: 12px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+}
+.main-- .div-- .black a {
+  color: white;
+  text-decoration: none;
+}
+.main-- .div-- .blue {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  border-radius: 12px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+}
+.main-- .div-- .blue a {
+  color: white;
+  text-decoration: none;
+}
+.main-- .div-- .red {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border-radius: 12px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+}
+.main-- .div-- .red a {
+  color: white;
+  text-decoration: none;
+}/*# sourceMappingURL=cajas.css.map */

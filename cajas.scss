@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin caja($color: black) {
+    width: 200px;
+    height: 200px;
+    background-color: $color;
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+body {
+    background-color: #434445;
+    transition: .3s
+}
+
+.body-active {
+    transition: .3s;
+    background-color: rgb(116, 21, 134);
+}
+
+.main-- {
+    max-width: 1280px;
+    margin: 0 auto;
+
+
+    .div-- {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 60px auto;
+        gap: 28px;
+        flex-wrap: wrap;
+
+        .black {
+            @include caja();
+        }
+
+        .blue {
+            @include caja(blue);
+        }
+
+        .red {
+            @include caja(red)
+        }
+    }
+}
